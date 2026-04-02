@@ -1,6 +1,6 @@
 # Terrahedral
 
-CIF -> coordination geometry analysis for metalloenzymes and minerals.
+Coordination geometry analysis for metalloenzymes and minerals.
 
 ## Install
 
