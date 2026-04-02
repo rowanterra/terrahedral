@@ -53,4 +53,8 @@ pytest
 
 ## License
 
-MIT
+Business Source License 1.1 — free for academic and non-commercial use.
+Commercial use requires a paid license. Contact rowan.r.terra@gmail.com.
+
+On April 2, 2030 (or 4 years after each version's release), the code
+converts to GPL-3.0.
