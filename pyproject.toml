@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "terrahedral"
+version = "0.1.0"
+description = "CIF -> coordination geometry analysis for metalloenzymes and minerals"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Terra Laboratory"},
+]
+keywords = [
+    "crystallography", "coordination-chemistry", "metalloenzyme",
+    "CIF", "mmCIF", "geometry", "Eh-pH",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+full = [
+    "gemmi>=0.6",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+terrahedral = "terrahedral.cli:main"
+
+[project.urls]
+Repository = "https://github.com/terra-laboratory/terrahedral"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/terrahedral"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 99
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
