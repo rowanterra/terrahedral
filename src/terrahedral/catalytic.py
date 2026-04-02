@@ -3,7 +3,7 @@ CatalyticFrame — represents a catalytic intermediate or state
 constructed from spectroscopic observables, DFT coordinates,
 or crystallographic data.
 
-Designed for the Guo-lab workflow:
+Designed workflow:
     spectroscopy (Mössbauer, EPR, NRVS) → DFT → coordinates → geometry
 
 Usage:
